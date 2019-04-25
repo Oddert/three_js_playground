@@ -86,6 +86,9 @@ loader.load('JetPack_Bunny.stl', function ( geometry ) {
   render()
 });
 
+var controls = new THREE.OrbitControls(camera)
+controls.minDistance = 100
+controls.maxDistance = 500
 
 
 var renderer = new THREE.WebGLRenderer({ antialias: true })
@@ -100,3 +103,10 @@ function render () {
 }
 
 render()
+
+function animate () {
+  requestAnimationFrame(animate)
+  controls.update()
+  render()
+}
+animate()
