@@ -90,7 +90,6 @@ var controls = new THREE.OrbitControls(camera)
 controls.minDistance = 100
 controls.maxDistance = 500
 
-
 var renderer = new THREE.WebGLRenderer({ antialias: true })
 renderer.setPixelRatio(window.devicePixelRatio)
 renderer.setSize(window.innerWidth, window.innerHeight)
