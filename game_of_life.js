@@ -229,6 +229,7 @@ function animate() {
 
 let playback
 function play (fps=.25) {
+  console.log(`Playing animation with ${fps}fps`)
   stop = false
   initAnimation(fps)
   // playback = setInterval(itirateLife, 1000)
@@ -238,6 +239,8 @@ function pause () {
   // clearInterval(playback)
 }
 
+const playBtn = document.querySelector('.play')
+playBtn.onclick = play
 
 
 
