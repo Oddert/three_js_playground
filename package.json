@@ -8,7 +8,7 @@
     "start": "browser-sync start --directory --server --files \"*.css, *.html, *.js\" --http"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "axios": "^0.19.2",
     "browser-sync": "^2.26.13"
